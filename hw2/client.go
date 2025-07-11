@@ -184,7 +184,7 @@ func main() {
 	}
 
 	if *producerPtr && (*groupPtr != "" || *eventPtr == "") {
-		log.Fatal("Set correct parameters for producer (producer can't use 'groupID' and must use 'event'). Use --help flag.")
+		log.Fatal("Set correct parameters for producer (producer can't use 'group' and must use 'event'). Use --help flag.")
 	}
 
 	if *consumerPtr && (*groupPtr == "" || *eventPtr == "") {
